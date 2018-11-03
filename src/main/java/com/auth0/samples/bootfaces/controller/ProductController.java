@@ -8,7 +8,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Scope(value = "session")
+import javax.faces.bean.ViewScoped;
+
+
+@ViewScoped
+//@Scope(value = "session")
 @Component(value = "productController")
 @ELBeanName(value = "productController")
 @Join(path = "/product", to = "/product/product-form.jsf")

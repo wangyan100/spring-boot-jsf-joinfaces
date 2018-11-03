@@ -10,10 +10,12 @@ import org.ocpsoft.rewrite.faces.annotation.IgnorePostback;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-
 import java.util.List;
+import javax.faces.bean.ViewScoped;
 
-@Scope (value = "session")
+
+@ViewScoped
+//@Scope (value = "session")
 @Component (value = "listProducts")
 @ELBeanName(value = "listProducts")
 @Join(path = "/", to = "/product/product-list.jsf")
