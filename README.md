@@ -10,7 +10,7 @@ The example shows you how to use JoinFaces to integrate JSF with SpringBoot.
 
 I followed [the article](https://auth0.com/blog/developing-jsf-applications-with-spring-boot/ ) to integrate JSF with SpringBoot 1.5 successfully, but since some JSF anotations, e.g. @ViewScoped does not exists in SpringBoot, therefore I 
 
-- [ ] implement my own ViewScoped for SpringBoot according to [the link](https://stackoverflow.com/questions/38292456/integrating-jsf-managed-bean-annotations-with-spring-boot)  , souce code is at [GitHub](https://github.com/wangyan100/spring-boot-jsf-joinfaces/tree/myviewscope) 
+- [ ] implement my own ViewScoped for SpringBoot according to [the link](https://stackoverflow.com/questions/38292456/integrating-jsf-managed-bean-annotations-with-spring-boot)  , source code is at [GitHub](https://github.com/wangyan100/spring-boot-jsf-joinfaces/tree/myviewscope) 
 
   And
 
