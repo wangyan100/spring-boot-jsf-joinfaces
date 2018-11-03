@@ -8,13 +8,13 @@ The example shows you how to use JoinFaces to integrate JSF with SpringBoot.
 
 - Scenario 
 
-I followed the article https://auth0.com/blog/developing-jsf-applications-with-spring-boot/ to integrate JSF with SpringBoot 1.5 successfully, but since some JSF anotations e.g. @ViewScoped does not exists in SpringBoot, therefore I could either
+I followed the article https://auth0.com/blog/developing-jsf-applications-with-spring-boot/ to integrate JSF with SpringBoot 1.5 successfully, but since some JSF anotations, e.g. @ViewScoped does not exists in SpringBoot, therefore I could either
 
 - [ ] implement @ViewScoped for SpringBoot by myself , read this link https://stackoverflow.com/questions/38292456/integrating-jsf-managed-bean-annotations-with-spring-boot
 
   or
 
-- [ ] using JoinFaces to solve this problem, which i will show you in below steps 
+- [ ] using JoinFaces to solve this problem, which I will show you in below steps 
 
   
 
@@ -28,7 +28,7 @@ I followed the article https://auth0.com/blog/developing-jsf-applications-with-s
 
     
 
-  ![jsf-spring-parent](screenshot/jsf-spring-parent.png)
+  ![jsf-spring-parent](./screenshot/jsf-spring-parent.png)
 
   
 
@@ -36,7 +36,7 @@ I followed the article https://auth0.com/blog/developing-jsf-applications-with-s
 
     
 
-![jsf-myfaces-spring-boot-starter](screenshot/jsf-myfaces-spring-boot-starter.png)
+![jsf-myfaces-spring-boot-starter](./screenshot/jsf-myfaces-spring-boot-starter.png)
 
 
 
@@ -45,4 +45,10 @@ I followed the article https://auth0.com/blog/developing-jsf-applications-with-s
   
 
 
-  ![BeanwithViewScope](screenshot/BeanwithViewScope.png)
+  ![BeanwithViewScope](./screenshot/BeanwithViewScope.png)
+
+
+
+- [ ]  run below command to remote debug the application
+
+  `mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"`
